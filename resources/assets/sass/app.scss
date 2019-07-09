@@ -1,0 +1,77 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// Variables
+@import "variables";
+
+@import '~element-ui/lib/theme-chalk/index.css';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// fontawesome-free
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+.navbar-laravel {
+  background-color: #FFC107;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.logo{
+  width:80px;
+}
+
+.navbar-msc{
+  border-bottom: 1px solid #dadada;
+}
+
+.navbar-brand{
+  display:inline;
+  font-weight: 800;
+}
+
+button{
+  &:focus{
+    outline: 1px dotted;
+  }
+}
+
+
+.login-screen{
+  .bgc-screen{
+    position: absolute;
+    opacity: .6;
+    width: 100%;
+    img{
+      background-size: cover;
+      width: 100%;
+    }
+  }
+  .card{
+    -webkit-box-shadow: 1px 0px 30px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 1px 0px 30px 5px rgba(0,0,0,0.25);
+    box-shadow: 1px 0px 30px 5px rgba(0,0,0,0.25);
+    margin-top: 10%;
+    border-radius: 1em;
+    background: #ffffff;
+    .card-header{
+      background-color: #ffc107b8 !important;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 30px 15px 34px 15px;
+      border-radius: 1em 1em 0 0;
+      border-color: transparent;
+      font-weight: 800;
+      border-bottom: 5px solid #343434;
+    }
+
+    .card-body{
+      padding-bottom: 30%;
+    }
+  }
+}

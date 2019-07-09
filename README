@@ -1,0 +1,28 @@
+
+
+# Crear un seeds
+
+    php artisan make:seeder [tabla_name]TableSeeder
+
+# Forzar correr eliminar migraciones, crearlas y ademas correr los seeders
+
+    php artisan migrate:reset --seed
+
+
+    php artisan migrate:fresh --seed
+
+# Correr seeder individual
+
+    php artisan db:seed --class=StatusTableSeeder
+
+# modificar php.ini:
+
+    post_max_size = 0
+    upload_max_filesize = 256M
+
+
+# configuracion de work para process en background (local)
+php artisan queue:work --queue=high,default,emails
+
+# comando en el servidor
+/opt/cpanel/ea-php71/root/usr/bin/php /home/msc_admin/msc/artisan queue:work --queue=high,default,emails &
